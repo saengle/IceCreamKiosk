@@ -9,10 +9,13 @@ import UIKit
 
 class PerchasedIceCreamViewController: UIViewController {
     
+
+    @IBOutlet weak var perchasedTitle: UILabel!
+    
+    @IBOutlet weak var perchasedTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
 }
-

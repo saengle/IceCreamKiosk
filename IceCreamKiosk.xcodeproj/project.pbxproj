@@ -15,6 +15,8 @@
 		8E7518B72BBC284E0076AC02 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8E7518B62BBC284E0076AC02 /* Base */; };
 		8EC41B1C2BBD04F90080DF68 /* IceCreamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC41B1B2BBD04F90080DF68 /* IceCreamModel.swift */; };
 		8EC41B202BBD078B0080DF68 /* PerchasedIceCreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC41B1F2BBD078B0080DF68 /* PerchasedIceCreamViewController.swift */; };
+		8EC41B222BBD08270080DF68 /* PerchasedIceCreamScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC41B212BBD08270080DF68 /* PerchasedIceCreamScreen.storyboard */; };
+		8EC41B252BBD0BE60080DF68 /* BinggraeSamanco-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8EC41B242BBD0BE60080DF68 /* BinggraeSamanco-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		8E7518B82BBC284E0076AC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EC41B1B2BBD04F90080DF68 /* IceCreamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamModel.swift; sourceTree = "<group>"; };
 		8EC41B1F2BBD078B0080DF68 /* PerchasedIceCreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerchasedIceCreamViewController.swift; sourceTree = "<group>"; };
+		8EC41B212BBD08270080DF68 /* PerchasedIceCreamScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PerchasedIceCreamScreen.storyboard; sourceTree = "<group>"; };
+		8EC41B242BBD0BE60080DF68 /* BinggraeSamanco-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BinggraeSamanco-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 		8E7518A92BBC284C0076AC02 /* IceCreamKiosk */ = {
 			isa = PBXGroup;
 			children = (
+				8EC41B242BBD0BE60080DF68 /* BinggraeSamanco-Bold.ttf */,
+				8EC41B232BBD0BB50080DF68 /* resource */,
 				8EC41B1B2BBD04F90080DF68 /* IceCreamModel.swift */,
 				8E7518AA2BBC284C0076AC02 /* AppDelegate.swift */,
 				8E7518AC2BBC284C0076AC02 /* SceneDelegate.swift */,
@@ -69,8 +75,16 @@
 				8E7518B52BBC284E0076AC02 /* LaunchScreen.storyboard */,
 				8E7518B82BBC284E0076AC02 /* Info.plist */,
 				8EC41B1F2BBD078B0080DF68 /* PerchasedIceCreamViewController.swift */,
+				8EC41B212BBD08270080DF68 /* PerchasedIceCreamScreen.storyboard */,
 			);
 			path = IceCreamKiosk;
+			sourceTree = "<group>";
+		};
+		8EC41B232BBD0BB50080DF68 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E7518B42BBC284E0076AC02 /* Assets.xcassets in Resources */,
+				8EC41B222BBD08270080DF68 /* PerchasedIceCreamScreen.storyboard in Resources */,
+				8EC41B252BBD0BE60080DF68 /* BinggraeSamanco-Bold.ttf in Resources */,
 				8E7518B72BBC284E0076AC02 /* Base in Resources */,
 				8E7518B22BBC284C0076AC02 /* Base in Resources */,
 			);
