@@ -14,6 +14,7 @@
 		8E7518B42BBC284E0076AC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E7518B32BBC284E0076AC02 /* Assets.xcassets */; };
 		8E7518B72BBC284E0076AC02 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8E7518B62BBC284E0076AC02 /* Base */; };
 		8EC41B1C2BBD04F90080DF68 /* IceCreamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC41B1B2BBD04F90080DF68 /* IceCreamModel.swift */; };
+		8EC41B202BBD078B0080DF68 /* PerchasedIceCreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC41B1F2BBD078B0080DF68 /* PerchasedIceCreamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8E7518B62BBC284E0076AC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E7518B82BBC284E0076AC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EC41B1B2BBD04F90080DF68 /* IceCreamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamModel.swift; sourceTree = "<group>"; };
+		8EC41B1F2BBD078B0080DF68 /* PerchasedIceCreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerchasedIceCreamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				8E7518B32BBC284E0076AC02 /* Assets.xcassets */,
 				8E7518B52BBC284E0076AC02 /* LaunchScreen.storyboard */,
 				8E7518B82BBC284E0076AC02 /* Info.plist */,
+				8EC41B1F2BBD078B0080DF68 /* PerchasedIceCreamViewController.swift */,
 			);
 			path = IceCreamKiosk;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC41B202BBD078B0080DF68 /* PerchasedIceCreamViewController.swift in Sources */,
 				8EC41B1C2BBD04F90080DF68 /* IceCreamModel.swift in Sources */,
 				8E7518AF2BBC284C0076AC02 /* ViewController.swift in Sources */,
 				8E7518AB2BBC284C0076AC02 /* AppDelegate.swift in Sources */,
