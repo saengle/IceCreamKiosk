@@ -8,7 +8,8 @@
 import UIKit
 
 class PerchasedIceCreamViewController: UIViewController {
-    
+
+    let perchasedTableViewCell = PerchasedTableViewCell()
 
     @IBOutlet weak var perchasedTitle: UILabel!
     
@@ -18,4 +19,19 @@ class PerchasedIceCreamViewController: UIViewController {
         super.viewDidLoad()
         
     }
+}
+
+extension PerchasedIceCreamViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return perchasedTableViewCell
+    }
+    
+    
+    
+    
 }
