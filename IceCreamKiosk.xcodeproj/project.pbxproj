@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1111D1F72BBD314000F7B689 /* BasketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1111D1F62BBD314000F7B689 /* BasketCollectionViewCell.swift */; };
+		1111D1F92BBD6FB100F7B689 /* IceCream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1111D1F82BBD6FB100F7B689 /* IceCream.swift */; };
 		8E7518AB2BBC284C0076AC02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7518AA2BBC284C0076AC02 /* AppDelegate.swift */; };
 		8E7518AD2BBC284C0076AC02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7518AC2BBC284C0076AC02 /* SceneDelegate.swift */; };
 		8E7518AF2BBC284C0076AC02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7518AE2BBC284C0076AC02 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1111D1F62BBD314000F7B689 /* BasketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketCollectionViewCell.swift; sourceTree = "<group>"; };
+		1111D1F82BBD6FB100F7B689 /* IceCream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCream.swift; sourceTree = "<group>"; };
 		8E7518A72BBC284C0076AC02 /* IceCreamKiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceCreamKiosk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7518AA2BBC284C0076AC02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E7518AC2BBC284C0076AC02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +62,9 @@
 			children = (
 				8E7518AA2BBC284C0076AC02 /* AppDelegate.swift */,
 				8E7518AC2BBC284C0076AC02 /* SceneDelegate.swift */,
+				1111D1F82BBD6FB100F7B689 /* IceCream.swift */,
 				8E7518AE2BBC284C0076AC02 /* ViewController.swift */,
+				1111D1F62BBD314000F7B689 /* BasketCollectionViewCell.swift */,
 				8E7518B02BBC284C0076AC02 /* Main.storyboard */,
 				8E7518B32BBC284E0076AC02 /* Assets.xcassets */,
 				8E7518B52BBC284E0076AC02 /* LaunchScreen.storyboard */,
@@ -140,6 +146,8 @@
 			files = (
 				8E7518AF2BBC284C0076AC02 /* ViewController.swift in Sources */,
 				8E7518AB2BBC284C0076AC02 /* AppDelegate.swift in Sources */,
+				1111D1F92BBD6FB100F7B689 /* IceCream.swift in Sources */,
+				1111D1F72BBD314000F7B689 /* BasketCollectionViewCell.swift in Sources */,
 				8E7518AD2BBC284C0076AC02 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
