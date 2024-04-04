@@ -68,6 +68,12 @@
                     <constraint firstItem="NYH-6m-JoZ" firstAttribute="leading" secondItem="uIs-Hl-xrL" secondAttribute="trailing" constant="10" id="umc-O8-v6e"/>
                     <constraint firstAttribute="trailing" secondItem="79L-9a-DdQ" secondAttribute="trailing" constant="5" id="wW0-Fa-Jsg" userLabel="trailing = 합계 : 0개.trailing + 8"/>
                 </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                        <integer key="value" value="20"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>

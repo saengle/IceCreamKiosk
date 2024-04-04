@@ -14,6 +14,7 @@ class PerchasedIceCreamViewController: UIViewController {
     //
     let cellName = "PerchasedTableViewCell"
     let cellReuseIdentifier = "perchasedCell"
+    let cellSpacingHeight: CGFloat = 10
     
     @IBOutlet weak var perchasedTitle: UILabel!
     @IBOutlet weak var perchasedTableView: UITableView!
@@ -34,19 +35,31 @@ class PerchasedIceCreamViewController: UIViewController {
 }
 
 extension PerchasedIceCreamViewController: UITableViewDataSource, UITableViewDelegate {
-    
+    // 셀 높이
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(100)
+    }
+    // 셀간 간격
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return cellSpacingHeight
+    }
+    //Section당 Row의 수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    //section 수
+    func numberOfSections(in tableView: UITableView) -> Int {
         return perchasedIceCreamList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = perchasedTableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath) as! PerchasedTableViewCell
         
-        let target = perchasedIceCreamList[indexPath.row]
+        let target = perchasedIceCreamList[indexPath.section]
 //        let img = UIImage(named: "")
         cell.iceCreamNameLabel?.text = target.name
         cell.iceCreamExplanationLabel?.text = target.explanation
-        cell.iceCreamAmountLabel?.text = String(target.amount)
+        cell.iceCreamAmountLabel?.text = "\(target.amount)개"
         
         
         return cell
