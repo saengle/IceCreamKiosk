@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,23 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mian-Head.png" translatesAutoresizingMaskIntoConstraints="NO" id="HT7-YO-i60">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mian-Head.png" translatesAutoresizingMaskIntoConstraints="NO" id="HT7-YO-i60">
                                 <rect key="frame" x="0.0" y="59" width="393" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ice  GooGoo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iy7-fo-RPj" userLabel="Lable">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ice  GooGoo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iy7-fo-RPj" userLabel="Lable">
                                 <rect key="frame" x="146" y="58.999999999999993" width="101.33333333333331" height="65.333333333333314"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <color key="textColor" systemColor="tableBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="3"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nuR-4o-ZTp">
+                            <segmentedControl opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nuR-4o-ZTp">
                                 <rect key="frame" x="0.0" y="139" width="393" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="tableBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="zVx-kz-Kmd"/>
-                                </constraints>
                                 <segments>
                                     <segment title="" image="Tap Bar 1" width="110"/>
                                     <segment title="" image="Tap Bar 2"/>
@@ -40,30 +41,73 @@
                                     <segment title="" image="Tap Bar 4"/>
                                 </segments>
                                 <color key="tintColor" systemColor="labelColor"/>
+                                <connections>
+                                    <action selector="IceCreamType:" destination="mUU-FX-Cv9" eventType="valueChanged" id="4CB-fy-nOy"/>
+                                </connections>
                             </segmentedControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pBM-F3-uyv" userLabel="Pro Duct View">
+                                <rect key="frame" x="-16" y="214" width="393" height="599"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kGn-5f-uUp">
+                                    <size key="itemSize" width="335" height="123"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="IceCreamProductViewCell" id="ufm-Cy-QPM" customClass="IceCreamProductViewCell" customModule="IceCreamKiosk" customModuleProvider="target">
+                                        <rect key="frame" x="29" y="0.0" width="335" height="123"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oV5-KQ-oo8">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="123"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="제품명 : 수박바 75m \n 개당 : 1000원 \n 원산지 : 국내산" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKE-F2-Ovb">
+                                                    <rect key="frame" x="101" y="17" width="133" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="00" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kY6-7k-9lz">
+                                                    <rect key="frame" x="417" y="82" width="46" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="kmL-MJ-144">
+                                                    <rect key="frame" x="221" y="83" width="94" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </stepper>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WaterMelon-Bar" translatesAutoresizingMaskIntoConstraints="NO" id="4BJ-I2-0Au">
+                                                    <rect key="frame" x="14" y="4" width="108" height="114"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="335" height="123"/>
+                                        <connections>
+                                            <outlet property="iceCreamQuantity" destination="kY6-7k-9lz" id="Inu-EE-eSR"/>
+                                            <outlet property="iceCreamimg" destination="4BJ-I2-0Au" id="ml7-CI-IuN"/>
+                                            <outlet property="iceCreamtext" destination="QKE-F2-Ovb" id="kKW-Jd-iHU"/>
+                                            <outlet property="productpric" destination="kmL-MJ-144" id="3hy-li-v1I"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="HT7-YO-i60" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AaE-wg-lho"/>
-                            <constraint firstItem="HT7-YO-i60" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WAT-sF-db3"/>
-                            <constraint firstItem="Iy7-fo-RPj" firstAttribute="top" secondItem="HT7-YO-i60" secondAttribute="bottom" constant="-80" id="fYK-g6-zKv"/>
-                            <constraint firstItem="Iy7-fo-RPj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fn4-R7-XGA"/>
-                            <constraint firstItem="nuR-4o-ZTp" firstAttribute="leading" secondItem="HT7-YO-i60" secondAttribute="leading" id="off-1c-yhL"/>
-                            <constraint firstItem="HT7-YO-i60" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wW2-Qm-LeF"/>
-                            <constraint firstItem="nuR-4o-ZTp" firstAttribute="trailing" secondItem="HT7-YO-i60" secondAttribute="trailing" id="wkS-AI-0Uj"/>
-                            <constraint firstItem="nuR-4o-ZTp" firstAttribute="top" secondItem="HT7-YO-i60" secondAttribute="bottom" id="xwF-Rd-zM7"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="Title" destination="Iy7-fo-RPj" id="mag-Np-Uu5"/>
+                        <outlet property="proDuctView" destination="pBM-F3-uyv" id="eLD-WA-yoJ"/>
                         <outlet property="segmentedControl" destination="nuR-4o-ZTp" id="tZ5-lv-qPs"/>
-                        <outlet property="titleLable" destination="Iy7-fo-RPj" id="prf-dV-egU"/>
-                        <outlet property="titlelabel" destination="Iy7-fo-RPj" id="6xn-dU-jbD"/>
-                        <outlet property="titlelable" destination="Iy7-fo-RPj" id="1Zs-Ic-5V0"/>
+                        <outlet property="titleLable" destination="Iy7-fo-RPj" id="zjI-Vf-zqM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="mUU-FX-Cv9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="11.450381679389313" y="-34.507042253521128"/>
         </scene>
@@ -74,6 +118,7 @@
         <image name="Tap Bar 2" width="24" height="50"/>
         <image name="Tap Bar 3" width="30" height="35"/>
         <image name="Tap Bar 4" width="50" height="35"/>
+        <image name="WaterMelon-Bar" width="317" height="114"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
