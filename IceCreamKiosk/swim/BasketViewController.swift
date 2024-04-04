@@ -37,6 +37,7 @@ class BasketViewController: UIViewController {
     @IBAction func cancelButtonAction(_ sender: Any) {
 
         //list reset & navigation back
+        self.dismiss(animated: true)
     }
 
     @IBAction func purchaseButtonAction(_ sender: Any) {
@@ -51,6 +52,8 @@ class BasketViewController: UIViewController {
                                       style: .default,
                                       handler: {_ in 
             guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "perchasedIceCreamViewController") as? PerchasedIceCreamViewController else { return }
+
+            viewController.modalPresentationStyle = .fullScreen
 
             //구매 완료 리스트 전달
             viewController.perchasedIceCreamList = self.basketList

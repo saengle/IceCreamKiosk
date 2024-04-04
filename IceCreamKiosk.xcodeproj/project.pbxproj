@@ -56,10 +56,10 @@
 		1111D20C2BBE7DFA00F7B689 /* sangle */ = {
 			isa = PBXGroup;
 			children = (
+				1111D2142BBE7E3900F7B689 /* PerchasedIceCreamViewController.swift */,
 				1111D20F2BBE7E3300F7B689 /* PerchasedIceCreamScreen.storyboard */,
 				1111D20E2BBE7E3300F7B689 /* PerchasedTableViewCell.swift */,
 				1111D2102BBE7E3300F7B689 /* PerchasedTableViewCell.xib */,
-				1111D2142BBE7E3900F7B689 /* PerchasedIceCreamViewController.swift */,
 			);
 			path = sangle;
 			sourceTree = "<group>";
@@ -68,8 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				8E7518AE2BBC284C0076AC02 /* BasketViewController.swift */,
-				1111D1F62BBD314000F7B689 /* BasketCollectionViewCell.swift */,
 				8E7518B02BBC284C0076AC02 /* Basket.storyboard */,
+				1111D1F62BBD314000F7B689 /* BasketCollectionViewCell.swift */,
 			);
 			path = swim;
 			sourceTree = "<group>";

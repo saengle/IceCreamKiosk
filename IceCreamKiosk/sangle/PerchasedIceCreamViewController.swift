@@ -21,6 +21,7 @@ class PerchasedIceCreamViewController: UIViewController {
     @IBOutlet weak var perchasedOkButton: UIButton!
     @IBAction func perchasedCheckButton(_ sender: Any) {
         //메인 페이지로 이동 함수 작성
+        self.dismiss(animated: true)
     }
     
     override func viewDidLoad() {
