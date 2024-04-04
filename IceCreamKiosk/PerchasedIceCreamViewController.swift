@@ -11,7 +11,7 @@ class PerchasedIceCreamViewController: UIViewController {
 
     //임시 데이터 불러오기
     let perchasedIceCreamList = IceCream.data
-    //
+    // 셀 xib 연결
     let cellName = "PerchasedTableViewCell"
     let cellReuseIdentifier = "perchasedCell"
     let cellSpacingHeight: CGFloat = 10
@@ -19,6 +19,9 @@ class PerchasedIceCreamViewController: UIViewController {
     @IBOutlet weak var perchasedTitle: UILabel!
     @IBOutlet weak var perchasedTableView: UITableView!
     @IBOutlet weak var perchasedOkButton: UIButton!
+    @IBAction func perchasedCheckButton(_ sender: Any) {
+        //메인 페이지로 이동 함수 작성
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +31,7 @@ class PerchasedIceCreamViewController: UIViewController {
         perchasedTableView.delegate = self
         registerXib()
     }
+    // 셀 xib 등록
     private func registerXib() {
         let nibName = UINib(nibName: cellName, bundle: nil)
         perchasedTableView.register(nibName, forCellReuseIdentifier: cellReuseIdentifier)
@@ -51,7 +55,7 @@ extension PerchasedIceCreamViewController: UITableViewDataSource, UITableViewDel
     func numberOfSections(in tableView: UITableView) -> Int {
         return perchasedIceCreamList.count
     }
-    
+    // Cell 설정
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = perchasedTableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath) as! PerchasedTableViewCell
         
@@ -64,8 +68,4 @@ extension PerchasedIceCreamViewController: UITableViewDataSource, UITableViewDel
         
         return cell
     }
-    
-    
-    
-    
 }
