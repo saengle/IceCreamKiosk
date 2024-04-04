@@ -10,7 +10,7 @@ import UIKit
 class PerchasedIceCreamViewController: UIViewController {
 
     //임시 데이터 불러오기
-    let perchasedIceCreamList = IceCream.data
+    var perchasedIceCreamList = [IceCream]()
     // 셀 xib 연결
     let cellName = "PerchasedTableViewCell"
     let cellReuseIdentifier = "perchasedCell"
