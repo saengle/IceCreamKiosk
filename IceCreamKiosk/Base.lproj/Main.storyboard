@@ -19,43 +19,48 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mian-Head.png" translatesAutoresizingMaskIntoConstraints="NO" id="HT7-YO-i60">
                                 <rect key="frame" x="0.0" y="59" width="393" height="80"/>
                             </imageView>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JbL-Sz-Hc6">
-                                <rect key="frame" x="0.0" y="139" width="393" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem image="icebar.png" landscapeImage="icebar.png" selectedImage="icebar.png" id="qJ7-xb-pVK"/>
-                                    <tabBarItem image="icecon.png" landscapeImage="icecon.png" selectedImage="icecon.png" id="hqe-eV-2iS"/>
-                                    <tabBarItem image="icecup.png" landscapeImage="icecup.png" selectedImage="icecup.png" id="Pgo-0V-2Ot"/>
-                                    <tabBarItem title="" image="icebared.png" landscapeImage="icebared.png" selectedImage="Tap Bar 4" id="hQd-xZ-dMc"/>
-                                </items>
-                            </tabBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iy7-fo-RPj">
-                                <rect key="frame" x="177" y="89" width="73" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ice  GooGoo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iy7-fo-RPj" userLabel="Lable">
+                                <rect key="frame" x="146" y="58.999999999999993" width="101.33333333333331" height="65.333333333333314"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" systemColor="tableBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="3"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nuR-4o-ZTp">
+                                <rect key="frame" x="0.0" y="139" width="393" height="71"/>
+                                <color key="backgroundColor" systemColor="tableBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="zVx-kz-Kmd"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="" image="Tap Bar 1" width="110"/>
+                                    <segment title="" image="Tap Bar 2"/>
+                                    <segment title="" image="Tap Bar 3"/>
+                                    <segment title="" image="Tap Bar 4"/>
+                                </segments>
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="JbL-Sz-Hc6" firstAttribute="leading" secondItem="HT7-YO-i60" secondAttribute="leading" id="49k-sR-H7w"/>
                             <constraint firstItem="HT7-YO-i60" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AaE-wg-lho"/>
-                            <constraint firstItem="HT7-YO-i60" firstAttribute="leading" secondItem="Iy7-fo-RPj" secondAttribute="trailing" constant="-250" id="EAr-7A-Dck"/>
-                            <constraint firstItem="JbL-Sz-Hc6" firstAttribute="top" secondItem="HT7-YO-i60" secondAttribute="bottom" id="NMA-vd-xba"/>
                             <constraint firstItem="HT7-YO-i60" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WAT-sF-db3"/>
-                            <constraint firstItem="Iy7-fo-RPj" firstAttribute="top" secondItem="HT7-YO-i60" secondAttribute="bottom" constant="-50" id="fYK-g6-zKv"/>
-                            <constraint firstItem="JbL-Sz-Hc6" firstAttribute="trailing" secondItem="HT7-YO-i60" secondAttribute="trailing" id="ilW-Pb-YJP"/>
+                            <constraint firstItem="Iy7-fo-RPj" firstAttribute="top" secondItem="HT7-YO-i60" secondAttribute="bottom" constant="-80" id="fYK-g6-zKv"/>
+                            <constraint firstItem="Iy7-fo-RPj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fn4-R7-XGA"/>
+                            <constraint firstItem="nuR-4o-ZTp" firstAttribute="leading" secondItem="HT7-YO-i60" secondAttribute="leading" id="off-1c-yhL"/>
+                            <constraint firstItem="HT7-YO-i60" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wW2-Qm-LeF"/>
+                            <constraint firstItem="nuR-4o-ZTp" firstAttribute="trailing" secondItem="HT7-YO-i60" secondAttribute="trailing" id="wkS-AI-0Uj"/>
+                            <constraint firstItem="nuR-4o-ZTp" firstAttribute="top" secondItem="HT7-YO-i60" secondAttribute="bottom" id="xwF-Rd-zM7"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="IceBar" destination="qJ7-xb-pVK" id="Jbe-xo-xgS"/>
-                        <outlet property="IceBared" destination="hQd-xZ-dMc" id="hAN-Cb-PEE"/>
-                        <outlet property="IceCon" destination="hqe-eV-2iS" id="E9C-fC-llg"/>
-                        <outlet property="IceCup" destination="Pgo-0V-2Ot" id="mmL-gj-fS1"/>
-                        <outlet property="Menu" destination="JbL-Sz-Hc6" id="T7x-CN-mH7"/>
+                        <outlet property="Title" destination="Iy7-fo-RPj" id="mag-Np-Uu5"/>
+                        <outlet property="segmentedControl" destination="nuR-4o-ZTp" id="tZ5-lv-qPs"/>
+                        <outlet property="titleLable" destination="Iy7-fo-RPj" id="prf-dV-egU"/>
+                        <outlet property="titlelabel" destination="Iy7-fo-RPj" id="6xn-dU-jbD"/>
+                        <outlet property="titlelable" destination="Iy7-fo-RPj" id="1Zs-Ic-5V0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -65,19 +70,18 @@
     </scenes>
     <resources>
         <image name="Mian-Head.png" width="393" height="80"/>
+        <image name="Tap Bar 1" width="23" height="50"/>
+        <image name="Tap Bar 2" width="24" height="50"/>
+        <image name="Tap Bar 3" width="30" height="35"/>
         <image name="Tap Bar 4" width="50" height="35"/>
-        <image name="icebar.png" width="23" height="50"/>
-        <image name="icebared.png" width="50" height="35"/>
-        <image name="icecon.png" width="24" height="50"/>
-        <image name="icecup.png" width="30" height="35"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="tableBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
