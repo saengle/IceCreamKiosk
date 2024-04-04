@@ -61,6 +61,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="perchasedOkButton" destination="qyg-hc-tIx" id="mMs-Sf-ngQ"/>
                         <outlet property="perchasedTableView" destination="C4l-AV-fXC" id="bap-7Y-2Zd"/>
                         <outlet property="perchasedTitle" destination="MvQ-Fb-fF8" id="Whx-ix-QEN"/>
                     </connections>

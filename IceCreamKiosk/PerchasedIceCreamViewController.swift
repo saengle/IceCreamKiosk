@@ -17,10 +17,12 @@ class PerchasedIceCreamViewController: UIViewController {
     
     @IBOutlet weak var perchasedTitle: UILabel!
     @IBOutlet weak var perchasedTableView: UITableView!
+    @IBOutlet weak var perchasedOkButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        perchasedOkButton.layer.cornerRadius = 15
         perchasedTableView.dataSource = self
         perchasedTableView.delegate = self
         registerXib()
@@ -39,6 +41,7 @@ extension PerchasedIceCreamViewController: UITableViewDataSource, UITableViewDel
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = perchasedTableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath) as! PerchasedTableViewCell
+        
         let target = perchasedIceCreamList[indexPath.row]
 //        let img = UIImage(named: "")
         cell.iceCreamNameLabel?.text = target.name
