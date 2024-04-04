@@ -21,34 +21,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="구매 완료 품목" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvQ-Fb-fF8">
+                                <rect key="frame" x="0.0" y="59" width="393" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.91764705879999997" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="AsQ-Ad-1EV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BinggraeSamanco-Bold" family="Binggrae Samanco" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyg-hc-tIx">
-                                <rect key="frame" x="159.66666666666666" y="783" width="74" height="35"/>
+                                <rect key="frame" x="139.66666666666666" y="776.33333333333337" width="113.66666666666666" height="41.666666666666629"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.23921568630000001" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="    확인     ">
+                                    <fontDescription key="titleFontDescription" name="BinggraeSamanco-Bold" family="Binggrae Samanco" pointSize="25"/>
+                                </buttonConfiguration>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="C4l-AV-fXC">
-                                <rect key="frame" x="16" y="59" width="361" height="716"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구매 완료 품목" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MvQ-Fb-fF8">
-                                    <rect key="frame" x="0.0" y="0.0" width="361" height="34"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" red="1" green="0.91764705879999997" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="fontDescription" name="BinggraeSamanco-Bold" family="Binggrae Samanco" pointSize="26"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                <rect key="frame" x="16" y="101" width="361" height="667.33333333333337"/>
+                                <color key="backgroundColor" red="1" green="0.91764705879999997" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="1" green="0.91764705882352937" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="C4l-AV-fXC" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" id="0X0-bD-UoV"/>
-                            <constraint firstItem="C4l-AV-fXC" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="24S-za-eHW"/>
-                            <constraint firstItem="C4l-AV-fXC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="9cL-bi-KGH"/>
-                            <constraint firstItem="qyg-hc-tIx" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="E1E-ar-th4"/>
-                            <constraint firstItem="qyg-hc-tIx" firstAttribute="top" secondItem="C4l-AV-fXC" secondAttribute="bottom" constant="8" id="GfO-7r-vD6"/>
-                            <constraint firstItem="qyg-hc-tIx" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="sDj-Nh-Oji"/>
-                            <constraint firstItem="C4l-AV-fXC" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="sTf-Bu-A65"/>
+                            <constraint firstItem="qyg-hc-tIx" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="7nM-f5-7LZ"/>
+                            <constraint firstItem="C4l-AV-fXC" firstAttribute="top" secondItem="MvQ-Fb-fF8" secondAttribute="bottom" constant="8" id="9ah-RD-4as"/>
+                            <constraint firstItem="MvQ-Fb-fF8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="9d1-5x-mVt"/>
+                            <constraint firstItem="qyg-hc-tIx" firstAttribute="top" secondItem="C4l-AV-fXC" secondAttribute="bottom" constant="8" id="EAj-Cj-WMA"/>
+                            <constraint firstItem="C4l-AV-fXC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="H2D-3v-Cm4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MvQ-Fb-fF8" secondAttribute="trailing" id="L5h-m4-C1U"/>
+                            <constraint firstItem="C4l-AV-fXC" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="-16" id="LMZ-RH-wnJ"/>
+                            <constraint firstItem="MvQ-Fb-fF8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="i0I-f0-YFS"/>
+                            <constraint firstItem="qyg-hc-tIx" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="jpH-qF-x8F"/>
+                            <constraint firstItem="C4l-AV-fXC" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="mVK-vf-8Tq"/>
                         </constraints>
                     </view>
                     <connections>
@@ -58,7 +67,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46.564885496183201" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="767" y="-204"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NZF-3A-GKi">
+            <objects>
+                <viewController id="yp2-Ej-znD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vzj-Mo-PJg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bWU-DH-qsY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vjr-ON-CAJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-507" y="-132"/>
         </scene>
     </scenes>
     <resources>
