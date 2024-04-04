@@ -21,12 +21,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyg-hc-tIx">
+                                <rect key="frame" x="159.66666666666666" y="783" width="74" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="button"/>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="C4l-AV-fXC">
-                                <rect key="frame" x="16" y="59" width="361" height="759"/>
+                                <rect key="frame" x="16" y="59" width="361" height="716"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구매 완료 품목" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MvQ-Fb-fF8">
+                                <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구매 완료 품목" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MvQ-Fb-fF8">
                                     <rect key="frame" x="0.0" y="0.0" width="361" height="34"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="1" green="0.91764705879999997" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" name="BinggraeSamanco-Bold" family="Binggrae Samanco" pointSize="26"/>
                                     <nil key="textColor"/>
@@ -37,10 +42,13 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="1" green="0.91764705882352937" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="C4l-AV-fXC" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="Eap-9T-Q1G"/>
-                            <constraint firstItem="C4l-AV-fXC" firstAttribute="trailing" secondItem="5EZ-qb-Rvc" secondAttribute="trailingMargin" id="LOH-lM-moc"/>
-                            <constraint firstItem="C4l-AV-fXC" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" id="RpM-Jc-c7t"/>
-                            <constraint firstItem="C4l-AV-fXC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Wvw-XI-ffM"/>
+                            <constraint firstItem="C4l-AV-fXC" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" id="0X0-bD-UoV"/>
+                            <constraint firstItem="C4l-AV-fXC" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="24S-za-eHW"/>
+                            <constraint firstItem="C4l-AV-fXC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="9cL-bi-KGH"/>
+                            <constraint firstItem="qyg-hc-tIx" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="E1E-ar-th4"/>
+                            <constraint firstItem="qyg-hc-tIx" firstAttribute="top" secondItem="C4l-AV-fXC" secondAttribute="bottom" constant="8" id="GfO-7r-vD6"/>
+                            <constraint firstItem="qyg-hc-tIx" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="sDj-Nh-Oji"/>
+                            <constraint firstItem="C4l-AV-fXC" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="sTf-Bu-A65"/>
                         </constraints>
                     </view>
                     <connections>

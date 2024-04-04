@@ -7,20 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E0127272BBD4DEA004F4F6A /* PerchasedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0127262BBD4DEA004F4F6A /* PerchasedTableViewCell.swift */; };
+		8E01272F2BBD7080004F4F6A /* PerchasedIceCreamScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E01272E2BBD7080004F4F6A /* PerchasedIceCreamScreen.storyboard */; };
 		8E7518AB2BBC284C0076AC02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7518AA2BBC284C0076AC02 /* AppDelegate.swift */; };
 		8E7518AD2BBC284C0076AC02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7518AC2BBC284C0076AC02 /* SceneDelegate.swift */; };
 		8E7518AF2BBC284C0076AC02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7518AE2BBC284C0076AC02 /* ViewController.swift */; };
 		8E7518B22BBC284C0076AC02 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8E7518B12BBC284C0076AC02 /* Base */; };
 		8E7518B42BBC284E0076AC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E7518B32BBC284E0076AC02 /* Assets.xcassets */; };
 		8E7518B72BBC284E0076AC02 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8E7518B62BBC284E0076AC02 /* Base */; };
+		8E9F975E2BBE3EB3003C2F27 /* PerchasedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0127252BBD4DEA004F4F6A /* PerchasedTableViewCell.xib */; };
 		8EC41B1C2BBD04F90080DF68 /* IceCreamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC41B1B2BBD04F90080DF68 /* IceCreamModel.swift */; };
-		8EC41B202BBD078B0080DF68 /* PerchasedIceCreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC41B1F2BBD078B0080DF68 /* PerchasedIceCreamViewController.swift */; };
-		8EC41B222BBD08270080DF68 /* PerchasedIceCreamScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC41B212BBD08270080DF68 /* PerchasedIceCreamScreen.storyboard */; };
 		8EEDFDA32BBD329C006976B4 /* components in Resources */ = {isa = PBXBuildFile; fileRef = 8EEDFDA22BBD329C006976B4 /* components */; };
 		8EEDFDA52BBD32C8006976B4 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 8EEDFDA42BBD32C8006976B4 /* Fonts */; };
+		8EEDFDAE2BBD4D47006976B4 /* PerchasedIceCreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEDFDAC2BBD4D46006976B4 /* PerchasedIceCreamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E0127252BBD4DEA004F4F6A /* PerchasedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerchasedTableViewCell.xib; sourceTree = "<group>"; };
+		8E0127262BBD4DEA004F4F6A /* PerchasedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerchasedTableViewCell.swift; sourceTree = "<group>"; };
+		8E01272E2BBD7080004F4F6A /* PerchasedIceCreamScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PerchasedIceCreamScreen.storyboard; sourceTree = "<group>"; };
 		8E7518A72BBC284C0076AC02 /* IceCreamKiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceCreamKiosk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7518AA2BBC284C0076AC02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E7518AC2BBC284C0076AC02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,10 +35,9 @@
 		8E7518B62BBC284E0076AC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E7518B82BBC284E0076AC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EC41B1B2BBD04F90080DF68 /* IceCreamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamModel.swift; sourceTree = "<group>"; };
-		8EC41B1F2BBD078B0080DF68 /* PerchasedIceCreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerchasedIceCreamViewController.swift; sourceTree = "<group>"; };
-		8EC41B212BBD08270080DF68 /* PerchasedIceCreamScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PerchasedIceCreamScreen.storyboard; sourceTree = "<group>"; };
 		8EEDFDA22BBD329C006976B4 /* components */ = {isa = PBXFileReference; lastKnownFileType = folder; path = components; sourceTree = "<group>"; };
 		8EEDFDA42BBD32C8006976B4 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		8EEDFDAC2BBD4D46006976B4 /* PerchasedIceCreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerchasedIceCreamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,12 +76,14 @@
 				8E7518AA2BBC284C0076AC02 /* AppDelegate.swift */,
 				8E7518AC2BBC284C0076AC02 /* SceneDelegate.swift */,
 				8E7518AE2BBC284C0076AC02 /* ViewController.swift */,
+				8E0127262BBD4DEA004F4F6A /* PerchasedTableViewCell.swift */,
+				8E0127252BBD4DEA004F4F6A /* PerchasedTableViewCell.xib */,
+				8E01272E2BBD7080004F4F6A /* PerchasedIceCreamScreen.storyboard */,
 				8E7518B02BBC284C0076AC02 /* Main.storyboard */,
+				8EEDFDAC2BBD4D46006976B4 /* PerchasedIceCreamViewController.swift */,
 				8E7518B32BBC284E0076AC02 /* Assets.xcassets */,
 				8E7518B52BBC284E0076AC02 /* LaunchScreen.storyboard */,
 				8E7518B82BBC284E0076AC02 /* Info.plist */,
-				8EC41B1F2BBD078B0080DF68 /* PerchasedIceCreamViewController.swift */,
-				8EC41B212BBD08270080DF68 /* PerchasedIceCreamScreen.storyboard */,
 			);
 			path = IceCreamKiosk;
 			sourceTree = "<group>";
@@ -140,12 +146,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9F975E2BBE3EB3003C2F27 /* PerchasedTableViewCell.xib in Resources */,
 				8E7518B42BBC284E0076AC02 /* Assets.xcassets in Resources */,
-				8EC41B222BBD08270080DF68 /* PerchasedIceCreamScreen.storyboard in Resources */,
 				8E7518B72BBC284E0076AC02 /* Base in Resources */,
 				8EEDFDA32BBD329C006976B4 /* components in Resources */,
 				8EEDFDA52BBD32C8006976B4 /* Fonts in Resources */,
 				8E7518B22BBC284C0076AC02 /* Base in Resources */,
+				8E01272F2BBD7080004F4F6A /* PerchasedIceCreamScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,9 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EC41B202BBD078B0080DF68 /* PerchasedIceCreamViewController.swift in Sources */,
 				8EC41B1C2BBD04F90080DF68 /* IceCreamModel.swift in Sources */,
+				8E0127272BBD4DEA004F4F6A /* PerchasedTableViewCell.swift in Sources */,
 				8E7518AF2BBC284C0076AC02 /* ViewController.swift in Sources */,
+				8EEDFDAE2BBD4D47006976B4 /* PerchasedIceCreamViewController.swift in Sources */,
 				8E7518AB2BBC284C0076AC02 /* AppDelegate.swift in Sources */,
 				8E7518AD2BBC284C0076AC02 /* SceneDelegate.swift in Sources */,
 			);

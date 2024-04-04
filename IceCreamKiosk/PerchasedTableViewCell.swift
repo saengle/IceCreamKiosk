@@ -9,6 +9,10 @@ import UIKit
 
 class PerchasedTableViewCell: UITableViewCell {
 
+    @IBOutlet var iceCreamImage: UIImageView!
+    @IBOutlet var iceCreamNameLabel: UILabel!
+    @IBOutlet var iceCreamAmountLabel: UILabel!
+    @IBOutlet var iceCreamExplanationLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
