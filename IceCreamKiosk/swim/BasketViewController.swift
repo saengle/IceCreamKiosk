@@ -44,7 +44,13 @@ class BasketViewController: UIViewController {
         sheet.addAction(UIAlertAction(title: "아니요", style: .cancel, handler: nil))
 
         //complete handler에 화면 이동 및 리스트 전달 메서드 추가
-        sheet.addAction(UIAlertAction(title: "네", style: .default, handler: nil))
+
+        sheet.addAction(UIAlertAction(title: "네",
+                                      style: .default,
+                                      handler: {_ in 
+            guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "perchasedIceCreamViewController") as? PerchasedIceCreamViewController else { return }
+            self.present(viewController, animated: true) }
+        ))
 
         present(sheet, animated: true)
         //navigation to purchased list page with list

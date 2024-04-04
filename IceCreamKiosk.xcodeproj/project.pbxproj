@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1111D1F72BBD314000F7B689 /* BasketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1111D1F62BBD314000F7B689 /* BasketCollectionViewCell.swift */; };
-		1111D1F92BBD6FB100F7B689 /* IceCream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1111D1F82BBD6FB100F7B689 /* IceCream.swift */; };
 		1111D1FB2BBD7EA600F7B689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1111D1FA2BBD7EA600F7B689 /* Main.storyboard */; };
 		1111D1FD2BBD7EE300F7B689 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1111D1FC2BBD7EE300F7B689 /* MainViewController.swift */; };
+		1111D2112BBE7E3300F7B689 /* PerchasedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1111D20E2BBE7E3300F7B689 /* PerchasedTableViewCell.swift */; };
+		1111D2122BBE7E3300F7B689 /* PerchasedIceCreamScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1111D20F2BBE7E3300F7B689 /* PerchasedIceCreamScreen.storyboard */; };
+		1111D2132BBE7E3300F7B689 /* PerchasedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1111D2102BBE7E3300F7B689 /* PerchasedTableViewCell.xib */; };
+		1111D2152BBE7E3900F7B689 /* PerchasedIceCreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1111D2142BBE7E3900F7B689 /* PerchasedIceCreamViewController.swift */; };
+		1111D2192BBE7F2500F7B689 /* IceCream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1111D2182BBE7F2500F7B689 /* IceCream.swift */; };
 		8E7518AB2BBC284C0076AC02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7518AA2BBC284C0076AC02 /* AppDelegate.swift */; };
 		8E7518AD2BBC284C0076AC02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7518AC2BBC284C0076AC02 /* SceneDelegate.swift */; };
 		8E7518AF2BBC284C0076AC02 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7518AE2BBC284C0076AC02 /* BasketViewController.swift */; };
@@ -21,9 +25,13 @@
 
 /* Begin PBXFileReference section */
 		1111D1F62BBD314000F7B689 /* BasketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketCollectionViewCell.swift; sourceTree = "<group>"; };
-		1111D1F82BBD6FB100F7B689 /* IceCream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCream.swift; sourceTree = "<group>"; };
 		1111D1FA2BBD7EA600F7B689 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1111D1FC2BBD7EE300F7B689 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1111D20E2BBE7E3300F7B689 /* PerchasedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerchasedTableViewCell.swift; sourceTree = "<group>"; };
+		1111D20F2BBE7E3300F7B689 /* PerchasedIceCreamScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PerchasedIceCreamScreen.storyboard; sourceTree = "<group>"; };
+		1111D2102BBE7E3300F7B689 /* PerchasedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PerchasedTableViewCell.xib; sourceTree = "<group>"; };
+		1111D2142BBE7E3900F7B689 /* PerchasedIceCreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerchasedIceCreamViewController.swift; sourceTree = "<group>"; };
+		1111D2182BBE7F2500F7B689 /* IceCream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCream.swift; sourceTree = "<group>"; };
 		8E7518A72BBC284C0076AC02 /* IceCreamKiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceCreamKiosk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7518AA2BBC284C0076AC02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E7518AC2BBC284C0076AC02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +53,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1111D20C2BBE7DFA00F7B689 /* sangle */ = {
+			isa = PBXGroup;
+			children = (
+				1111D20F2BBE7E3300F7B689 /* PerchasedIceCreamScreen.storyboard */,
+				1111D20E2BBE7E3300F7B689 /* PerchasedTableViewCell.swift */,
+				1111D2102BBE7E3300F7B689 /* PerchasedTableViewCell.xib */,
+				1111D2142BBE7E3900F7B689 /* PerchasedIceCreamViewController.swift */,
+			);
+			path = sangle;
+			sourceTree = "<group>";
+		};
+		1111D20D2BBE7E0900F7B689 /* swim */ = {
+			isa = PBXGroup;
+			children = (
+				8E7518AE2BBC284C0076AC02 /* BasketViewController.swift */,
+				1111D1F62BBD314000F7B689 /* BasketCollectionViewCell.swift */,
+				8E7518B02BBC284C0076AC02 /* Basket.storyboard */,
+			);
+			path = swim;
+			sourceTree = "<group>";
+		};
 		8E75189E2BBC284C0076AC02 = {
 			isa = PBXGroup;
 			children = (
@@ -64,14 +93,13 @@
 		8E7518A92BBC284C0076AC02 /* IceCreamKiosk */ = {
 			isa = PBXGroup;
 			children = (
+				1111D2182BBE7F2500F7B689 /* IceCream.swift */,
 				8E7518AA2BBC284C0076AC02 /* AppDelegate.swift */,
 				8E7518AC2BBC284C0076AC02 /* SceneDelegate.swift */,
-				1111D1F82BBD6FB100F7B689 /* IceCream.swift */,
-				8E7518AE2BBC284C0076AC02 /* BasketViewController.swift */,
-				1111D1F62BBD314000F7B689 /* BasketCollectionViewCell.swift */,
-				1111D1FC2BBD7EE300F7B689 /* MainViewController.swift */,
-				8E7518B02BBC284C0076AC02 /* Basket.storyboard */,
 				1111D1FA2BBD7EA600F7B689 /* Main.storyboard */,
+				1111D1FC2BBD7EE300F7B689 /* MainViewController.swift */,
+				1111D20D2BBE7E0900F7B689 /* swim */,
+				1111D20C2BBE7DFA00F7B689 /* sangle */,
 				8E7518B32BBC284E0076AC02 /* Assets.xcassets */,
 				8E7518B52BBC284E0076AC02 /* LaunchScreen.storyboard */,
 				8E7518B82BBC284E0076AC02 /* Info.plist */,
@@ -138,9 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E7518B42BBC284E0076AC02 /* Assets.xcassets in Resources */,
+				1111D2122BBE7E3300F7B689 /* PerchasedIceCreamScreen.storyboard in Resources */,
 				8E7518B72BBC284E0076AC02 /* Base in Resources */,
 				8E7518B22BBC284C0076AC02 /* Base in Resources */,
 				1111D1FB2BBD7EA600F7B689 /* Main.storyboard in Resources */,
+				1111D2132BBE7E3300F7B689 /* PerchasedTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,9 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1111D1FD2BBD7EE300F7B689 /* MainViewController.swift in Sources */,
+				1111D2112BBE7E3300F7B689 /* PerchasedTableViewCell.swift in Sources */,
 				8E7518AF2BBC284C0076AC02 /* BasketViewController.swift in Sources */,
+				1111D2152BBE7E3900F7B689 /* PerchasedIceCreamViewController.swift in Sources */,
 				8E7518AB2BBC284C0076AC02 /* AppDelegate.swift in Sources */,
-				1111D1F92BBD6FB100F7B689 /* IceCream.swift in Sources */,
+				1111D2192BBE7F2500F7B689 /* IceCream.swift in Sources */,
 				1111D1F72BBD314000F7B689 /* BasketCollectionViewCell.swift in Sources */,
 				8E7518AD2BBC284C0076AC02 /* SceneDelegate.swift in Sources */,
 			);
