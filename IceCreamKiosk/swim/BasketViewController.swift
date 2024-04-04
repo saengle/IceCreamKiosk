@@ -12,6 +12,8 @@ class BasketViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var basketCollectionView: UICollectionView!
 
+    var basketList = [IceCream]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,7 +46,17 @@ class BasketViewController: UIViewController {
         sheet.addAction(UIAlertAction(title: "아니요", style: .cancel, handler: nil))
 
         //complete handler에 화면 이동 및 리스트 전달 메서드 추가
-        sheet.addAction(UIAlertAction(title: "네", style: .default, handler: nil))
+
+        sheet.addAction(UIAlertAction(title: "네",
+                                      style: .default,
+                                      handler: {_ in 
+            guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "perchasedIceCreamViewController") as? PerchasedIceCreamViewController else { return }
+
+            //구매 완료 리스트 전달
+            viewController.perchasedIceCreamList = self.basketList
+
+            self.present(viewController, animated: true) }
+        ))
 
         present(sheet, animated: true)
         //navigation to purchased list page with list
@@ -54,16 +66,18 @@ class BasketViewController: UIViewController {
 extension BasketViewController: UICollectionViewDelegate, UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        50
+        basketList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = basketCollectionView.dequeueReusableCell(withReuseIdentifier: BasketCollectionViewCell.cellId, for: indexPath) as! BasketCollectionViewCell
 
+                //이미지 asset에 이름
         cell.imageView.image = UIImage(systemName: "heart.fill")
-        cell.nameLabel.text = "수박바"
-        cell.countLabel.text = "2 개"
+        
+        cell.nameLabel.text = basketList[indexPath.row].name
+        cell.countLabel.text = "\(basketList[indexPath.row].amount) 개"
 
         return cell
     }
