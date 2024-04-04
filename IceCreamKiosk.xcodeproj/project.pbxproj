@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		1111D1F72BBD314000F7B689 /* BasketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1111D1F62BBD314000F7B689 /* BasketCollectionViewCell.swift */; };
 		1111D1F92BBD6FB100F7B689 /* IceCream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1111D1F82BBD6FB100F7B689 /* IceCream.swift */; };
+		1111D1FB2BBD7EA600F7B689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1111D1FA2BBD7EA600F7B689 /* Main.storyboard */; };
+		1111D1FD2BBD7EE300F7B689 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1111D1FC2BBD7EE300F7B689 /* MainViewController.swift */; };
 		8E7518AB2BBC284C0076AC02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7518AA2BBC284C0076AC02 /* AppDelegate.swift */; };
 		8E7518AD2BBC284C0076AC02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7518AC2BBC284C0076AC02 /* SceneDelegate.swift */; };
-		8E7518AF2BBC284C0076AC02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7518AE2BBC284C0076AC02 /* ViewController.swift */; };
+		8E7518AF2BBC284C0076AC02 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7518AE2BBC284C0076AC02 /* BasketViewController.swift */; };
 		8E7518B22BBC284C0076AC02 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8E7518B12BBC284C0076AC02 /* Base */; };
 		8E7518B42BBC284E0076AC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E7518B32BBC284E0076AC02 /* Assets.xcassets */; };
 		8E7518B72BBC284E0076AC02 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8E7518B62BBC284E0076AC02 /* Base */; };
@@ -20,11 +22,13 @@
 /* Begin PBXFileReference section */
 		1111D1F62BBD314000F7B689 /* BasketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketCollectionViewCell.swift; sourceTree = "<group>"; };
 		1111D1F82BBD6FB100F7B689 /* IceCream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCream.swift; sourceTree = "<group>"; };
+		1111D1FA2BBD7EA600F7B689 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1111D1FC2BBD7EE300F7B689 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8E7518A72BBC284C0076AC02 /* IceCreamKiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceCreamKiosk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7518AA2BBC284C0076AC02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E7518AC2BBC284C0076AC02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8E7518AE2BBC284C0076AC02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8E7518B12BBC284C0076AC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E7518AE2BBC284C0076AC02 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		8E7518B12BBC284C0076AC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Basket.storyboard; sourceTree = "<group>"; };
 		8E7518B32BBC284E0076AC02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E7518B62BBC284E0076AC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E7518B82BBC284E0076AC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,9 +67,11 @@
 				8E7518AA2BBC284C0076AC02 /* AppDelegate.swift */,
 				8E7518AC2BBC284C0076AC02 /* SceneDelegate.swift */,
 				1111D1F82BBD6FB100F7B689 /* IceCream.swift */,
-				8E7518AE2BBC284C0076AC02 /* ViewController.swift */,
+				8E7518AE2BBC284C0076AC02 /* BasketViewController.swift */,
 				1111D1F62BBD314000F7B689 /* BasketCollectionViewCell.swift */,
-				8E7518B02BBC284C0076AC02 /* Main.storyboard */,
+				1111D1FC2BBD7EE300F7B689 /* MainViewController.swift */,
+				8E7518B02BBC284C0076AC02 /* Basket.storyboard */,
+				1111D1FA2BBD7EA600F7B689 /* Main.storyboard */,
 				8E7518B32BBC284E0076AC02 /* Assets.xcassets */,
 				8E7518B52BBC284E0076AC02 /* LaunchScreen.storyboard */,
 				8E7518B82BBC284E0076AC02 /* Info.plist */,
@@ -134,6 +140,7 @@
 				8E7518B42BBC284E0076AC02 /* Assets.xcassets in Resources */,
 				8E7518B72BBC284E0076AC02 /* Base in Resources */,
 				8E7518B22BBC284C0076AC02 /* Base in Resources */,
+				1111D1FB2BBD7EA600F7B689 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E7518AF2BBC284C0076AC02 /* ViewController.swift in Sources */,
+				1111D1FD2BBD7EE300F7B689 /* MainViewController.swift in Sources */,
+				8E7518AF2BBC284C0076AC02 /* BasketViewController.swift in Sources */,
 				8E7518AB2BBC284C0076AC02 /* AppDelegate.swift in Sources */,
 				1111D1F92BBD6FB100F7B689 /* IceCream.swift in Sources */,
 				1111D1F72BBD314000F7B689 /* BasketCollectionViewCell.swift in Sources */,
@@ -155,12 +163,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8E7518B02BBC284C0076AC02 /* Main.storyboard */ = {
+		8E7518B02BBC284C0076AC02 /* Basket.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8E7518B12BBC284C0076AC02 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Basket.storyboard;
 			sourceTree = "<group>";
 		};
 		8E7518B52BBC284E0076AC02 /* LaunchScreen.storyboard */ = {

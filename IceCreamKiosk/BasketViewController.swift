@@ -15,8 +15,21 @@ class BasketViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let customDetent = UISheetPresentationController.Detent.custom(identifier: .init("customDetent")) { _ in
+
+            //올라오는 높이
+            return 600
+        }
+
+        if let sheetPresentationController = sheetPresentationController {
+            sheetPresentationController.detents = [customDetent]
+            sheetPresentationController.prefersGrabberVisible = true
+        }
+
         basketCollectionView.delegate = self
         basketCollectionView.dataSource = self
+
+//        basketCollectionView.backgroundColor =
     }
 
     @IBAction func cancelButtonAction(_ sender: Any) {
@@ -41,7 +54,7 @@ class BasketViewController: UIViewController {
 extension BasketViewController: UICollectionViewDelegate, UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
+        50
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
