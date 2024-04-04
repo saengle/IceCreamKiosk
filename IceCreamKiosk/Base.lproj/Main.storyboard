@@ -1,24 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IceCreamKiosk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mian-Head.png" translatesAutoresizingMaskIntoConstraints="NO" id="HT7-YO-i60">
+                                <rect key="frame" x="0.0" y="59" width="393" height="80"/>
+                            </imageView>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JbL-Sz-Hc6">
+                                <rect key="frame" x="0.0" y="139" width="393" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem image="icebar.png" landscapeImage="icebar.png" selectedImage="icebar.png" id="qJ7-xb-pVK"/>
+                                    <tabBarItem image="icecon.png" landscapeImage="icecon.png" selectedImage="icecon.png" id="hqe-eV-2iS"/>
+                                    <tabBarItem image="icecup.png" landscapeImage="icecup.png" selectedImage="icecup.png" id="Pgo-0V-2Ot"/>
+                                    <tabBarItem title="" image="icebared.png" landscapeImage="icebared.png" selectedImage="Tap Bar 4" id="hQd-xZ-dMc"/>
+                                </items>
+                            </tabBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iy7-fo-RPj">
+                                <rect key="frame" x="177" y="89" width="73" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="2" height="3"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JbL-Sz-Hc6" firstAttribute="leading" secondItem="HT7-YO-i60" secondAttribute="leading" id="49k-sR-H7w"/>
+                            <constraint firstItem="HT7-YO-i60" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AaE-wg-lho"/>
+                            <constraint firstItem="HT7-YO-i60" firstAttribute="leading" secondItem="Iy7-fo-RPj" secondAttribute="trailing" constant="-250" id="EAr-7A-Dck"/>
+                            <constraint firstItem="JbL-Sz-Hc6" firstAttribute="top" secondItem="HT7-YO-i60" secondAttribute="bottom" id="NMA-vd-xba"/>
+                            <constraint firstItem="HT7-YO-i60" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WAT-sF-db3"/>
+                            <constraint firstItem="Iy7-fo-RPj" firstAttribute="top" secondItem="HT7-YO-i60" secondAttribute="bottom" constant="-50" id="fYK-g6-zKv"/>
+                            <constraint firstItem="JbL-Sz-Hc6" firstAttribute="trailing" secondItem="HT7-YO-i60" secondAttribute="trailing" id="ilW-Pb-YJP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="IceBar" destination="qJ7-xb-pVK" id="Jbe-xo-xgS"/>
+                        <outlet property="IceBared" destination="hQd-xZ-dMc" id="hAN-Cb-PEE"/>
+                        <outlet property="IceCon" destination="hqe-eV-2iS" id="E9C-fC-llg"/>
+                        <outlet property="IceCup" destination="Pgo-0V-2Ot" id="mmL-gj-fS1"/>
+                        <outlet property="Menu" destination="JbL-Sz-Hc6" id="T7x-CN-mH7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="11.450381679389313" y="-34.507042253521128"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Mian-Head.png" width="393" height="80"/>
+        <image name="Tap Bar 4" width="50" height="35"/>
+        <image name="icebar.png" width="23" height="50"/>
+        <image name="icebared.png" width="50" height="35"/>
+        <image name="icecon.png" width="24" height="50"/>
+        <image name="icecup.png" width="30" height="35"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
