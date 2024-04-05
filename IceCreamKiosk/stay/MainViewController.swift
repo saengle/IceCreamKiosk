@@ -13,11 +13,8 @@ class MainViewController: UIViewController {
     @IBOutlet weak var productCollectionview: UICollectionView!
     var segmentedValue = 0
     var wholeIceCreamList = [IceCream]()
+    var classyfiedIceCreams = [[IceCream]]()
     var myIceCreamList = [IceCream]()
-    var data1 = ["1-1", "1-1", "1-1", "1-1"]
-    var data2 = ["2-2", "2-2","2-2","2-2"]
-    var data3 = ["3-3","3-3","3-3","3-3"]
-    var data4 = ["4-4","4-4","4-4","4-4"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +25,7 @@ class MainViewController: UIViewController {
         productCollectionview.collectionViewLayout = createCompositionalLayoutForFirst()
         
         wholeIceCreamList = loadJson(filename: "IceCreamJson") ?? []
-        print(wholeIceCreamList)
+        classyfyIceCreams()
     }
 
     @IBAction func segmentedChanged(_ sender: UISegmentedControl) {
@@ -40,6 +37,9 @@ class MainViewController: UIViewController {
             productCollectionview.reloadData()
             segmentedValue = sender.selectedSegmentIndex
         case 2:
+            productCollectionview.reloadData()
+            segmentedValue = sender.selectedSegmentIndex
+        case 3:
             productCollectionview.reloadData()
             segmentedValue = sender.selectedSegmentIndex
         default:
@@ -71,37 +71,59 @@ class MainViewController: UIViewController {
         }
         return nil
     }
+    func classyfyIceCreams() {
+        var cornIceCreamList = wholeIceCreamList.filter{$0.type == "bar"}
+        var barIceCreamList = wholeIceCreamList.filter{$0.type == "corn"}
+        var cupIceCreamList = wholeIceCreamList.filter{$0.type == "cup"}
+        var breadIceCreamList = wholeIceCreamList.filter{$0.type == "bread"}
+        classyfiedIceCreams = [barIceCreamList, cornIceCreamList, cupIceCreamList, breadIceCreamList]
+    }
 }
 
 
 // 데이터 소스 설정 - 데이터와 관련된 것들
 extension MainViewController: UICollectionViewDataSource {
-
+    
     // 각 섹션에 들어가는 아이템 갯수
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        switch segmentedValue {
+        case 0:
+            return classyfiedIceCreams[0].count
+        case 1:
+            return classyfiedIceCreams[1].count
+        case 2:
+            return classyfiedIceCreams[2].count
+        case 3:
+            return classyfiedIceCreams[3].count
+        default:
+            return 0
+        }
     }
 
     // 각 콜렉션뷰 쎌에 대한 설정
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: IceCreamProductViewCell.self), for: indexPath) as! IceCreamProductViewCell
-
+        
         switch segmentedValue {
         case 0:
-            cell.nameLabel.text = data1[indexPath.row]
-            cell.explanationLabel.text = "sdffsadfas \n\n\n sdfsafs"
+            cell.nameLabel.text = classyfiedIceCreams[0][indexPath.row].name
+            cell.explanationLabel.text = classyfiedIceCreams[0][indexPath.row].explanation
             cell.imageView.image = UIImage(named: "watermelon-bar")
         case 1:
-            cell.nameLabel.text = data2[indexPath.row]
-            cell.explanationLabel.text = "sdffsadfas \n\n\n sdfsafs"
+            cell.nameLabel.text = classyfiedIceCreams[1][indexPath.row].name
+            cell.explanationLabel.text = classyfiedIceCreams[1][indexPath.row].explanation
             cell.imageView.image = UIImage(named: "watermelon-bar")
         case 2:
-            cell.nameLabel.text = data3[indexPath.row]
-            cell.explanationLabel.text = "sdffsadfas \n\n\n sdfsafs"
+            cell.nameLabel.text = classyfiedIceCreams[2][indexPath.row].name
+            cell.explanationLabel.text = classyfiedIceCreams[2][indexPath.row].explanation
+            cell.imageView.image = UIImage(named: "watermelon-bar")
+        case 3:
+            cell.nameLabel.text = classyfiedIceCreams[3][indexPath.row].name
+            cell.explanationLabel.text = classyfiedIceCreams[3][indexPath.row].explanation
             cell.imageView.image = UIImage(named: "watermelon-bar")
         default:
-            cell.nameLabel.text = data4[indexPath.row]
-            cell.explanationLabel.text = "sdffsadfas \n\n\n sdfsafs"
+            cell.nameLabel.text = ""
+            cell.explanationLabel.text = ""
             cell.imageView.image = UIImage(named: "watermelon-bar")
         }
         return cell
@@ -150,5 +172,4 @@ extension MainViewController {
         }
         return layout
     }
-
 }

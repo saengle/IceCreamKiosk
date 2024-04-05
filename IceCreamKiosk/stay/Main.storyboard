@@ -40,9 +40,9 @@
                                 </constraints>
                                 <segments>
                                     <segment title="" image="Tap Bar 1" width="110"/>
-                                    <segment title="" image="Tap Bar 2"/>
-                                    <segment title="" image="Tap Bar 3"/>
-                                    <segment title="" image="Tap Bar 4"/>
+                                    <segment title="" image="icecon.png"/>
+                                    <segment title="" image="icecup.png"/>
+                                    <segment title="" image="icebared.png"/>
                                 </segments>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <connections>
@@ -182,9 +182,9 @@
     <resources>
         <image name="Mian-Head.png" width="393" height="80"/>
         <image name="Tap Bar 1" width="23" height="50"/>
-        <image name="Tap Bar 2" width="24" height="50"/>
-        <image name="Tap Bar 3" width="30" height="35"/>
-        <image name="Tap Bar 4" width="50" height="35"/>
+        <image name="icebared.png" width="50" height="35"/>
+        <image name="icecon.png" width="24" height="50"/>
+        <image name="icecup.png" width="30" height="35"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
