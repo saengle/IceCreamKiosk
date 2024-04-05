@@ -72,8 +72,8 @@ class MainViewController: UIViewController {
         return nil
     }
     func classyfyIceCreams() {
-        var cornIceCreamList = wholeIceCreamList.filter{$0.type == "bar"}
-        var barIceCreamList = wholeIceCreamList.filter{$0.type == "corn"}
+        var barIceCreamList = wholeIceCreamList.filter{$0.type == "bar"}
+        var cornIceCreamList = wholeIceCreamList.filter{$0.type == "corn"}
         var cupIceCreamList = wholeIceCreamList.filter{$0.type == "cup"}
         var breadIceCreamList = wholeIceCreamList.filter{$0.type == "bread"}
         Self.classyfiedIceCreams = [barIceCreamList, cornIceCreamList, cupIceCreamList, breadIceCreamList]
@@ -109,25 +109,22 @@ extension MainViewController: UICollectionViewDataSource {
             cell.index = indexPath
             cell.type = 0
             cell.setUp()
-            cell.imageView.image = UIImage(named: "watermelon-bar")
+
         case 1:
             cell.index = indexPath
             cell.type = 1
             cell.setUp()
 
-            cell.imageView.image = UIImage(named: "watermelon-bar")
         case 2:
             cell.index = indexPath
             cell.type = 2
             cell.setUp()
 
-            cell.imageView.image = UIImage(named: "watermelon-bar")
         case 3:
             cell.index = indexPath
             cell.type = 3
             cell.setUp()
 
-            cell.imageView.image = UIImage(named: "watermelon-bar")
         default:
             cell.nameLabel.text = ""
             cell.explanationLabel.text = ""

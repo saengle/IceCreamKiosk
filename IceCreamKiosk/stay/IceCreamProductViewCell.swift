@@ -36,6 +36,7 @@ class IceCreamProductViewCell: UICollectionViewCell {
         explanationLabel.text = MainViewController.classyfiedIceCreams[type!][index!.row].explanation
         countLabel.text = "\(MainViewController.classyfiedIceCreams[type!][index!.row].amount)"
         countStepper.value = Double(MainViewController.classyfiedIceCreams[type!][index!.row].amount)
+        imageView.image = UIImage(named: MainViewController.classyfiedIceCreams[type!][index!.row].image)
     }
 
 //    override func prepareForReuse() {
