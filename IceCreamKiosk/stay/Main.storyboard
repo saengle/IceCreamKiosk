@@ -103,7 +103,7 @@
                                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="kmL-MJ-144">
                                                                     <rect key="frame" x="105" y="0.0" width="94" height="32"/>
                                                                     <connections>
-                                                                        <action selector="countChanged:" destination="ufm-Cy-QPM" eventType="valueChanged" id="BYA-Fp-Zsj"/>
+                                                                        <action selector="countChanged:" destination="ufm-Cy-QPM" eventType="valueChanged" id="Cdz-hn-BTs"/>
                                                                     </connections>
                                                                 </stepper>
                                                             </subviews>
@@ -127,6 +127,7 @@
                                         <size key="customSize" width="335" height="123"/>
                                         <connections>
                                             <outlet property="countLabel" destination="ynR-mc-sCj" id="P66-41-e8v"/>
+                                            <outlet property="countStepper" destination="kmL-MJ-144" id="0IR-2q-7kk"/>
                                             <outlet property="explanationLabel" destination="01h-zW-erL" id="WGC-mq-weU"/>
                                             <outlet property="imageView" destination="4BJ-I2-0Au" id="x1q-Ge-79c"/>
                                             <outlet property="nameLabel" destination="QKE-F2-Ovb" id="XTf-EL-IMi"/>

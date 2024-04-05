@@ -13,7 +13,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var productCollectionview: UICollectionView!
     var segmentedValue = 0
     var wholeIceCreamList = [IceCream]()
-    var classyfiedIceCreams = [[IceCream]]()
+    static var classyfiedIceCreams = [[IceCream]]()
     var myIceCreamList = [IceCream]()
 
     override func viewDidLoad() {
@@ -51,7 +51,7 @@ class MainViewController: UIViewController {
     @IBAction func moveToBasket(_ sender: UIButton) {
         guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "BasketViewController") as? BasketViewController else { return }
 
-        viewController.basketList = wholeIceCreamList
+        viewController.basketList = Self.classyfiedIceCreams.flatMap{$0}.filter { $0.amount != 0 }
 
         self.present(viewController, animated: true)
 
@@ -76,7 +76,7 @@ class MainViewController: UIViewController {
         var barIceCreamList = wholeIceCreamList.filter{$0.type == "corn"}
         var cupIceCreamList = wholeIceCreamList.filter{$0.type == "cup"}
         var breadIceCreamList = wholeIceCreamList.filter{$0.type == "bread"}
-        classyfiedIceCreams = [barIceCreamList, cornIceCreamList, cupIceCreamList, breadIceCreamList]
+        Self.classyfiedIceCreams = [barIceCreamList, cornIceCreamList, cupIceCreamList, breadIceCreamList]
     }
 }
 
@@ -88,13 +88,13 @@ extension MainViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch segmentedValue {
         case 0:
-            return classyfiedIceCreams[0].count
+            return Self.classyfiedIceCreams[0].count
         case 1:
-            return classyfiedIceCreams[1].count
+            return Self.classyfiedIceCreams[1].count
         case 2:
-            return classyfiedIceCreams[2].count
+            return Self.classyfiedIceCreams[2].count
         case 3:
-            return classyfiedIceCreams[3].count
+            return Self.classyfiedIceCreams[3].count
         default:
             return 0
         }
@@ -106,20 +106,27 @@ extension MainViewController: UICollectionViewDataSource {
         
         switch segmentedValue {
         case 0:
-            cell.nameLabel.text = classyfiedIceCreams[0][indexPath.row].name
-            cell.explanationLabel.text = classyfiedIceCreams[0][indexPath.row].explanation
+            cell.index = indexPath
+            cell.type = 0
+            cell.setUp()
             cell.imageView.image = UIImage(named: "watermelon-bar")
         case 1:
-            cell.nameLabel.text = classyfiedIceCreams[1][indexPath.row].name
-            cell.explanationLabel.text = classyfiedIceCreams[1][indexPath.row].explanation
+            cell.index = indexPath
+            cell.type = 1
+            cell.setUp()
+
             cell.imageView.image = UIImage(named: "watermelon-bar")
         case 2:
-            cell.nameLabel.text = classyfiedIceCreams[2][indexPath.row].name
-            cell.explanationLabel.text = classyfiedIceCreams[2][indexPath.row].explanation
+            cell.index = indexPath
+            cell.type = 2
+            cell.setUp()
+
             cell.imageView.image = UIImage(named: "watermelon-bar")
         case 3:
-            cell.nameLabel.text = classyfiedIceCreams[3][indexPath.row].name
-            cell.explanationLabel.text = classyfiedIceCreams[3][indexPath.row].explanation
+            cell.index = indexPath
+            cell.type = 3
+            cell.setUp()
+
             cell.imageView.image = UIImage(named: "watermelon-bar")
         default:
             cell.nameLabel.text = ""
