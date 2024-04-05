@@ -1,0 +1,164 @@
+{
+  "iceCream": [
+    {
+      "name": "구구콘 딸기",
+      "price": 1500,
+      "explanation": "구구콘은 맛있어요",
+      "image": "gugucornStrawBerry",
+      "type": "IceCreamType.corn",
+      "amount": 0
+    },
+    {
+      "name": "라베스트콘 초코",
+      "price": 1500,
+      "explanation": "라베스트콘은 맛있어요",
+      "image": "labestChoco",
+      "type": "IceCreamType.corn",
+      "amount": 0
+    },
+    {
+      "name": "구구콘 바닐라",
+      "price": 1500,
+      "explanation": "구구콘은 맛있어요",
+      "image": "gugucornVanila",
+      "type": "IceCreamType.corn",
+      "amount": 0
+    },
+    {
+      "name": "구구콘 땅콩카라멜",
+      "price": 1500,
+      "explanation": "구구콘은 맛있어요",
+      "image": "gugucornPenut",
+      "type": "IceCreamType.corn",
+      "amount": 0
+    },
+    {
+      "name": "슈퍼콘 바닐라",
+      "price": 1300,
+      "explanation": "슈퍼콘은 맛있어요",
+      "image": "supercornVanila",
+      "type": "IceCreamType.corn",
+      "amount": 0
+    },
+    {
+      "name": "슈퍼콘 초코볼",
+      "price": 1300,
+      "explanation": "슈퍼콘은 맛있어요",
+      "image": "supercornChoco",
+      "type": "IceCreamType.corn",
+      "amount": 0
+    },
+    {
+      "name": "수박바",
+      "price": 1000,
+      "explanation": "수박바는 맛있어요",
+      "image": "watermelonBar",
+      "type": "IceCreamType.bar",
+      "amount": 0
+    },
+    {
+      "name": "누가바",
+      "price": 1000,
+      "explanation": "누가바는 맛있어요",
+      "image": "nougarBar",
+      "type": "IceCreamType.bar",
+      "amount": 0
+    },
+    {
+      "name": "별난바",
+      "price": 1000,
+      "explanation": "별난바 맛있어요",
+      "image": "byulnanBar",
+      "type": "IceCreamType.bar",
+      "amount": 0
+    },
+    {
+      "name": "돼지바",
+      "price": 1000,
+      "explanation": "돼지바 먹는다고 돼지 안돼지",
+      "image": "pigBar",
+      "type": "IceCreamType.bar",
+      "amount": 0
+    },
+    {
+      "name": "빼빼로바",
+      "price": 1000,
+      "explanation": "빼빼로가 아이스크림으로 !?",
+      "image": "peperoBar",
+      "type": "IceCreamType.bar",
+      "amount": 0
+    },
+    {
+      "name": "투게더",
+      "price": 4000,
+      "explanation": "\b투게더 함께먹는 근본의 맛",
+      "image": "together",
+      "type": "IceCreamType.cup",
+      "amount": 0
+    },
+    {
+      "name": "투게더 초코",
+      "price": 4000,
+      "explanation": "\b투게더 함께먹는 무근본의 초코맛",
+      "image": "togetherChoco",
+      "type": "IceCreamType.cup",
+      "amount": 0
+    },
+    {
+      "name": "쿠키앤크림 컵",
+      "price": 4000,
+      "explanation": "\b쿠앤크를 컵에 !?",
+      "image": "cookieAndCream",
+      "type": "IceCreamType.cup",
+      "amount": 0
+    },
+    {
+      "name": "체리마루",
+      "price": 4000,
+      "explanation": "\b체리마루가 컵으로 !?",
+      "image": "cherryMaru",
+      "type": "IceCreamType.cup",
+      "amount": 0
+    },
+    {
+      "name": "녹차마루",
+      "price": 4000,
+      "explanation": "\b녹차마루 컵",
+      "image": "greenteaMaRu",
+      "type": "IceCreamType.cup",
+      "amount": 0
+    },
+    {
+      "name": "칙촉 위즐",
+      "price": 4000,
+      "explanation": "칙촉이 아이스크림을 나왔어요 !",
+      "image": "chikChok",
+      "type": "IceCreamType.cup",
+      "amount": 0
+    },
+    {
+      "name": "조안나",
+      "price": 4000,
+      "explanation": "\b조안나가 to게더보다 맛있어요",
+      "image": "joanna",
+      "type": "IceCreamType.cup",
+      "amount": 0
+    },
+    {
+      "name": "붕어싸만코",
+      "price": 2000,
+      "explanation": "붕어싸만코 숨겨두고 몰래먹는 맛",
+      "image": "ssamanco",
+      "type": "IceCreamType.bread",
+      "amount": 0
+    },
+    {
+      "name": "빵뚜르",
+      "price": 2000,
+      "explanation": "부드러운 카스테라사이 녹아내리는 바닐라 아이스크림",
+      "image": "ppangttour",
+      "type": "IceCreamType.bread",
+      "amount": 0
+    }
+  ]
+}

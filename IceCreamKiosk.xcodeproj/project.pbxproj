@@ -51,6 +51,7 @@
 		8E7518B22BBC284C0076AC02 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8E7518B12BBC284C0076AC02 /* Base */; };
 		8E7518B42BBC284E0076AC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E7518B32BBC284E0076AC02 /* Assets.xcassets */; };
 		8E7518B72BBC284E0076AC02 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8E7518B62BBC284E0076AC02 /* Base */; };
+		8EC806672BBFB2A20082793B /* IceCreamJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EC806662BBFB2A20082793B /* IceCreamJson.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 		8E7518B32BBC284E0076AC02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E7518B62BBC284E0076AC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E7518B82BBC284E0076AC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EC806662BBFB2A20082793B /* IceCreamJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IceCreamJson.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				1111D2182BBE7F2500F7B689 /* IceCream.swift */,
+				8EC806662BBFB2A20082793B /* IceCreamJson.json */,
 				8E7518AA2BBC284C0076AC02 /* AppDelegate.swift */,
 				8E7518AC2BBC284C0076AC02 /* SceneDelegate.swift */,
 				1113646C2BBEDCB20050347E /* stay */,
@@ -347,6 +350,7 @@
 				111364992BBEDE960050347E /* icecon.png in Resources */,
 				8E7518B22BBC284C0076AC02 /* Base in Resources */,
 				111364982BBEDE960050347E /* icebared.png in Resources */,
+				8EC806672BBFB2A20082793B /* IceCreamJson.json in Resources */,
 				111364A62BBEDE960050347E /* Waffle-Bread.png in Resources */,
 				111364A42BBEDE960050347E /* Toa-Bread.png in Resources */,
 				1113649B2BBEDE960050347E /* Choco-Bar.png in Resources */,

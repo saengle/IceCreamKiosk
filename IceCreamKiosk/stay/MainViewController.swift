@@ -12,7 +12,8 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var productCollectionview: UICollectionView!
     var segmentedValue = 0
-
+    var wholeIceCreamList = [IceCream]()
+    var myIceCreamList = [IceCream]()
     var data1 = ["1-1", "1-1", "1-1", "1-1"]
     var data2 = ["2-2", "2-2","2-2","2-2"]
     var data3 = ["3-3","3-3","3-3","3-3"]
@@ -25,6 +26,9 @@ class MainViewController: UIViewController {
         productCollectionview.delegate = self
 
         productCollectionview.collectionViewLayout = createCompositionalLayoutForFirst()
+        
+        wholeIceCreamList = loadJson(filename: "IceCreamJson") ?? []
+        print(wholeIceCreamList)
     }
 
     @IBAction func segmentedChanged(_ sender: UISegmentedControl) {
@@ -47,19 +51,26 @@ class MainViewController: UIViewController {
     @IBAction func moveToBasket(_ sender: UIButton) {
         guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "BasketViewController") as? BasketViewController else { return }
 
-        viewController.basketList = [
-            IceCream(name: "구구콘", price: 1500, explanation: "구구콘은 맛있어요1", image: "이미지", type: IceCreamType.corn, amount: 100),
-            IceCream(name: "구구콘", price: 1500, explanation: "구구콘은 맛있어요2", image: "이미지", type: IceCreamType.corn, amount: 1),
-            IceCream(name: "구구콘", price: 1500, explanation: "구구콘은 맛있어요3", image: "이미지", type: IceCreamType.corn, amount: 1),
-            IceCream(name: "구구콘", price: 1500, explanation: "구구콘은 맛있어요4", image: "이미지", type: IceCreamType.corn, amount: 1),
-            IceCream(name: "구구콘", price: 1500, explanation: "구구콘은 맛있어요5", image: "이미지", type: IceCreamType.corn, amount: 1),
-        ]
+        viewController.basketList = wholeIceCreamList
 
         self.present(viewController, animated: true)
 
     }
 
-
+    func loadJson(filename fileName: String) -> [IceCream]? {
+        //json 파일 불러오기
+        if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: url) // Data 타입으로 변환
+                let decoder = JSONDecoder()
+                let jsonData = try decoder.decode(IceCreamList.self, from: data) // Data -> IceCreamList 타입
+                return jsonData.iceCream // 리스트만 추출
+            } catch {
+                print("error:\(error)")
+            }
+        }
+        return nil
+    }
 }
 
 

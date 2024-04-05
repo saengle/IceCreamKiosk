@@ -7,20 +7,19 @@
 
 import UIKit
 
-struct IceCream {
+public typealias Codable = Decodable & Encodable
+
+struct IceCreamList: Codable {
+    let iceCream: [IceCream]
+}
+
+struct IceCream: Codable {
     let name: String
     let price: Int
     let explanation: String
     let image: String
-    let type: IceCreamType
+    let type: String
     var amount: Int
-}
-
-enum IceCreamType: String {
-    case corn
-    case bar
-    case cup
-    case bread
 }
 
 extension IceCream {
