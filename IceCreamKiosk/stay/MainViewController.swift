@@ -156,7 +156,7 @@ extension MainViewController {
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
 
             // 아이템 간의 간격 설정
-            item.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
+            item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 2, bottom: 5, trailing: 2)
 
             // 변경할 부분
             let groupHeight =  NSCollectionLayoutDimension.fractionalWidth(1/3)
@@ -171,7 +171,7 @@ extension MainViewController {
             let section = NSCollectionLayoutSection(group: group)
 
             // 섹션에 대한 간격 설정
-            section.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20)
+            section.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 10, bottom: 20, trailing: 10)
             return section
         }
         return layout

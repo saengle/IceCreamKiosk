@@ -77,7 +77,7 @@ extension BasketViewController: UICollectionViewDelegate, UICollectionViewDataSo
         let cell = basketCollectionView.dequeueReusableCell(withReuseIdentifier: BasketCollectionViewCell.cellId, for: indexPath) as! BasketCollectionViewCell
 
                 //이미지 asset에 이름
-        cell.imageView.image = UIImage(systemName: "heart.fill")
+        cell.imageView.image = UIImage(named: basketList[indexPath.row].image)
         
         cell.nameLabel.text = basketList[indexPath.row].name
         cell.countLabel.text = "\(basketList[indexPath.row].amount) 개"

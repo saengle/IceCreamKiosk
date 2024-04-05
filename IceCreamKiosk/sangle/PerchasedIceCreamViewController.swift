@@ -62,6 +62,7 @@ extension PerchasedIceCreamViewController: UITableViewDataSource, UITableViewDel
         
         let target = perchasedIceCreamList[indexPath.section]
 //        let img = UIImage(named: "")
+        cell.iceCreamImage?.image = UIImage(named: target.image)
         cell.iceCreamNameLabel?.text = target.name
         cell.iceCreamExplanationLabel?.text = target.explanation
         cell.iceCreamAmountLabel?.text = "\(target.amount)개"

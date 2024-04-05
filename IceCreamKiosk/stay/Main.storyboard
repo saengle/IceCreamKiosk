@@ -124,7 +124,14 @@
                                                 <constraint firstAttribute="trailing" secondItem="w9G-Bo-2E9" secondAttribute="trailing" constant="4" id="q5U-4v-fd1"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.99215686270000003" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <size key="customSize" width="335" height="123"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="countLabel" destination="ynR-mc-sCj" id="P66-41-e8v"/>
                                             <outlet property="countStepper" destination="kmL-MJ-144" id="0IR-2q-7kk"/>
@@ -137,8 +144,16 @@
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmO-ty-sFQ" userLabel="Basket Button">
                                 <rect key="frame" x="140" y="783" width="113" height="35"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.23921568630000001" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="장바구니"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="moveToBasket:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sbu-22-K0a"/>
                                 </connections>
